@@ -1,9 +1,9 @@
 # site escape-game
-• Thème : Post Apocalyptique  
-• Public : Ado/Jeune adulte (18-30 ans)  
-• Lieu : Sous-sol  
-• Ambiance : Horrifique  
-• But : Collaborer  
+* Thème : Post Apocalyptique  
+* Public : Ado/Jeune adulte (18-30 ans)  
+* Lieu : Sous-sol  
+* Ambiance : Horrifique  
+* But : Collaborer  
 
 ## Inspiré du jeu The Last Of Us
 
