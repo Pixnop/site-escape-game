@@ -1,6 +1,11 @@
 # site escape-game
+• Thème : Post Apocalyptique  
+• Public : Ado/Jeune adulte (18-30 ans)  
+• Lieu : Sous-sol  
+• Ambiance : Horrifique  
+• But : Collaborer  
 
-Inspiré du jeu The Last Of Us
+## Inspiré du jeu The Last Of Us
 
 Vous vous trouvez dans les environs de Jackson, ville à l'ouest du Wyoming au nord des Etats-Unis.
 Vers la fin de l'après-midi, c'est votre groupe qui est désigné pour faire la dernière patrouille de la
@@ -16,6 +21,8 @@ barricades tiendront une heure. En fouillant un peu le chalet, vous appercevez �
 sous-sol. Vous parvenez à trouver l'entrée et découvrez un grand sous-sol avec une porte blindée
 scellée. Parviendrez-vous à sauver votre peau, à rejoindre Jakson et à ouvrir la porte avant que la horde
 ne vous attrape ?
+
+## Images de références
 
 
 ![chalet-The-Last-of-Us-Part-II-scaled](https://user-images.githubusercontent.com/77785313/196005844-9901a4d0-998a-4d59-8c0c-4b139a49f474.jpg)
