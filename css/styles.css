@@ -15,7 +15,7 @@
   }
   article {
     margin-top: 60%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     padding: 20px;
     position: bottom;
     color: #f6f4e6;
@@ -85,6 +85,35 @@
  .top:hover {
   filter: drop-shadow(0 -2mm 2mm #fddb3a);
  }
+
+
+ .content {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  width: 1200px;
+  color: white;
+  opacity: 0;
+ }
+
+ .partie1:hover .content {
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+ }
+ .partie2:hover .content {
+  left: 360px;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+ }
+ .partie3:hover .content {
+  left: 360px;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+ }
+  
 
 
   
