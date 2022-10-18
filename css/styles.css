@@ -35,7 +35,28 @@
   h1 {
     padding: 30px;
     text-align:right;
-  }  
+  } 
+
+  #cave {
+    float: left;
+    max-height: 150px;
+    padding: 10px;
+  }
+
+  #chalet {
+    float: right;
+    max-height: 150px;
+    padding: 10px;
+  }
+
+  #infecté {
+    float: right;;
+    max-height: 150px;
+    padding: 10px;
+  }
+
+
+
   
 
 
