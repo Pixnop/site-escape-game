@@ -62,59 +62,67 @@
     -webkit-columns: 3 auto;
     -moz-columns: 3 auto;
     columns: 3 auto;
- }
- #conteneur p {
+  }
+  #conteneur p {
     text-align: center;
- }
- .zoom{
-  transition: transform .2s;
- }
- .zoom:hover{
-  transform: scale(1.05);
- }
- .top {
-  position: fixed;
-  padding: 10px;
-  bottom: 0;
-  right: 0;
-  height: 75px;
- }
- .top:hover {
-  filter: drop-shadow(0 -2mm 2mm #fddb3a);
- }
+  }
+  .zoom{
+    transition: transform .2s;
+  }
+  .zoom:hover{
+    transform: scale(1.05);
+  }
+  .top {
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    height: 75px;
+  }
+  .top:hover {
+    filter: drop-shadow(0 -2mm 2mm #fddb3a);
+  }
 
 
- .content {
-  position: absolute;
-  left: 360px;
-  padding: 10px;
-  text-align: center;
-  width: 1200px;
-  color: white;
-  opacity: 0;
- }
+  .content {
+    position: absolute;
+    left: 360px;
+    padding: 10px;
+    text-align: center;
+    width: 1200px;
+    color: white;
+    opacity: 0;
+  }
 
- .partie1:hover .content {
-  border-radius: 10% 10%;
-  background-color: #363636;
-  opacity: 1;
-  transition-delay: 0s;
-  transition-duration: 0.6s;
- }
- .partie2:hover .content {
-  border-radius: 10% 10%;
-  background-color: #363636;
-  opacity: 1;
-  transition-delay: 0s;
-  transition-duration: 0.6s;
- }
- .partie3:hover .content {
-  border-radius: 10% 10%;
-  background-color: #363636;
-  opacity: 1;
-  transition-delay: 0s;
-  transition-duration: 0.6s;
- }
+  .partie1:hover .content {
+    border-radius: 10% 10%;
+    background-color: #363636;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.6s;
+  }
+  .partie2:hover .content {
+    border-radius: 10% 10%;
+    background-color: #363636;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.6s;
+  }
+  .partie3:hover .content {
+    border-radius: 10% 10%;
+    background-color: #363636;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.6s;
+  }
+  
+  .formulaire{
+    background-color: #363636;
+    color: white;
+    padding : 20px;
+    text-align: center;
+  }
+
   
 
 
