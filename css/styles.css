@@ -21,7 +21,7 @@
     color: #f6f4e6;
   }
   p {
-    background-color: #363636;
+    
     border-radius: 10% 5%;
     padding: 10px;
   }
@@ -34,32 +34,47 @@
 
   h1 {
     padding: 30px;
-    text-align:right;
-  } 
-
-  #cave {
-    float: left;
-    max-height: 150px;
-    padding: 10px;
+    text-align:center;;
   }
 
   #chalet {
-    float: right;
-    max-height: 150px;
+    filter: drop-shadow(0 -6mm 4mm rgb(0, 0, 0));
+    position: relative;
+    max-height: 200px;
+    padding: 10px;
+  }
+
+  #cave {
+    filter: drop-shadow(0 -6mm 4mm rgb(0, 0, 0));
+    position: relative;
+    max-height: 200px;
     padding: 10px;
   }
 
   #infecté {
-    float: right;;
-    max-height: 150px;
+    filter: drop-shadow(0 -6mm 4mm rgb(0, 0, 0));
+    position: relative;
+    max-height: 200px;
     padding: 10px;
   }
 
-
-
-  
-
-
+  #conteneur {
+    margin: auto;
+    width: 1200px;
+    -webkit-columns: 3 auto;
+    -moz-columns: 3 auto;
+    columns: 3 auto;
+ }
+ #conteneur p {
+    text-align: center;
+    background-color: #363636;
+ }
+ .zoom{
+  transition: transform .2s;
+ }
+ .zoom:hover{
+  transform: scale(1.05);
+}
 
   
   /* mise en place du menu*/
@@ -137,4 +152,5 @@
     opacity: 1;
   }
   /* fin fonctionement hover pour chaque cas */
+  
   
