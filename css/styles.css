@@ -7,11 +7,14 @@
   
   body {
     background-color: #272727;
-    background-image: url("../picture/font-main.png");
+    background-image: url("../picture/font-main.png"); /* image de font menu */
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Montserrat", sans-serif;
     margin:0;
   }
   
+  /* mise en place du menu*/
   .menuNav {
     position: absolute;
     top: 50%;
@@ -20,6 +23,7 @@
     transform: translate(-50%, -50%);
   }
   
+  /* mise en place du texte de menu*/
   .menuNav a {
     color: #f6f4e6;
     text-decoration: none;
@@ -32,51 +36,57 @@
     transition: all 0.2s ease-in-out;
   }
   
+  
   .menuNav a:hover {
-    color: #fddb3a;
+    color: #fddb3a; /* couleur hover text */
   }
   
-  .menuNav .dot {
-    width: 6px;
-    height: 6px;
-    background: #fddb3a;
-    border-radius: 50%;
+  .menuNav .under {
+    width: 50px;/* taille limité a 50px*/
+    height: 50px;
+    /* mise en place de l'image de hover*/
+    background-image: url("../picture/logo.jpg");
+    background-size: 50px 40px;
+    background-repeat: no-repeat;
+    /*mis en place fonctionement hover*/
     opacity: 0;
-    -webkit-transform: translateX(35px);
-    transform: translateX(35px);
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   
-  .menuNav a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(35px);
-    transform: translateX(35px);
+   /* debut fonctionement hover pour chaque cas */
+  .menuNav a:nth-child(1):hover ~ .under {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
   
-  .menuNav a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(185px);
-    transform: translateX(185px);
+  .menuNav a:nth-child(2):hover ~ .under {
+    -webkit-transform: translateX(165px);
+    transform: translateX(165px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
   
-  .menuNav a:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(350px);
-    transform: translateX(350px);
+  .menuNav a:nth-child(3):hover ~ .under {
+    -webkit-transform: translateX(330px);
+    transform: translateX(330px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
   
-  .menuNav a:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(505px);
-    transform: translateX(505px);
+  .menuNav a:nth-child(4):hover ~ .under {
+    -webkit-transform: translateX(485px);
+    transform: translateX(485px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
+  /* fin fonctionement hover pour chaque cas */
   
