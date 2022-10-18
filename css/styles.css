@@ -38,21 +38,21 @@
   }
 
   #chalet {
-    filter: drop-shadow(0 -6mm 4mm rgb(0, 0, 0));
+    filter: drop-shadow(0 -2mm 2mm rgb(0, 0, 0));
     position: relative;
     max-height: 200px;
     padding: 10px;
   }
 
   #cave {
-    filter: drop-shadow(0 -6mm 4mm rgb(0, 0, 0));
+    filter: drop-shadow(0 -2mm 2mm rgb(0, 0, 0));
     position: relative;
     max-height: 200px;
     padding: 10px;
   }
 
   #infecté {
-    filter: drop-shadow(0 -6mm 4mm rgb(0, 0, 0));
+    filter: drop-shadow(0 -2mm 2mm rgb(0, 0, 0));
     position: relative;
     max-height: 200px;
     padding: 10px;
@@ -74,7 +74,18 @@
  }
  .zoom:hover{
   transform: scale(1.05);
-}
+ }
+ .top {
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  height: 75px;
+ }
+ .top:hover {
+  filter: drop-shadow(0 -2mm 2mm #fddb3a);
+ }
+
 
   
   /* mise en place du menu*/
