@@ -21,8 +21,6 @@
     color: #f6f4e6;
   }
   p {
-    
-    border-radius: 10% 5%;
     padding: 10px;
   }
   footer {
@@ -38,21 +36,21 @@
   }
 
   #chalet {
-    filter: drop-shadow(0 -2mm 2mm rgb(0, 0, 0));
+    filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
     position: relative;
     max-height: 200px;
     padding: 10px;
   }
 
   #cave {
-    filter: drop-shadow(0 -2mm 2mm rgb(0, 0, 0));
+    filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
     position: relative;
     max-height: 200px;
     padding: 10px;
   }
 
   #infecté {
-    filter: drop-shadow(0 -2mm 2mm rgb(0, 0, 0));
+    filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
     position: relative;
     max-height: 200px;
     padding: 10px;
@@ -67,7 +65,6 @@
  }
  #conteneur p {
     text-align: center;
-    background-color: #363636;
  }
  .zoom{
   transition: transform .2s;
@@ -89,6 +86,7 @@
 
  .content {
   position: absolute;
+  left: 360px;
   padding: 10px;
   text-align: center;
   width: 1200px;
@@ -97,21 +95,25 @@
  }
 
  .partie1:hover .content {
+  border-radius: 10% 10%;
+  background-color: #363636;
   opacity: 1;
   transition-delay: 0s;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
  }
  .partie2:hover .content {
-  left: 360px;
+  border-radius: 10% 10%;
+  background-color: #363636;
   opacity: 1;
   transition-delay: 0s;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
  }
  .partie3:hover .content {
-  left: 360px;
+  border-radius: 10% 10%;
+  background-color: #363636;
   opacity: 1;
   transition-delay: 0s;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
  }
   
 
