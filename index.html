@@ -89,6 +89,7 @@
         <h2 class="titre">
           Comment réserver ?
         </h2>
+        <img class="calendar" id="calendar" src="picture/calendar.png" alt="calendar">
 
         <form action="on-a-pas-encore-fait-de-php.php" method="post" class="formulaire">
           <p>
@@ -117,30 +118,30 @@
         </form>
       </div>
       <div id="contact">
-        
         <h2 class="titre">
           Comment nous contacter ?
         </h2>
-        <p>
-          Numéro de Téléphone : 0635381568
-        </p>
-        <p>
-          Notre mail :
-          <a href="Thelastofescape@escapegame.fr">Thelastofescape@escapegame.fr</a>
-        </p>
-        <img class="telephone" id="telephone" src="picture/telephone.png" alt="chalet">
-
-        <form method="post" action="traitement.php">
+        <div class="contactDec">
           <p>
-              <label for="ecrire">
-              Qu'avez-vous pensé de l'aventure ?
-              </label>
-              <br />
-              
-              <textarea name="ecrire" rows="10" cols="50" placeholder="Ecrivez nous sur ce que vous avez pensé de l'aventure">
-              </textarea>       
+            Numéro de Téléphone : 0635381568
           </p>
-       </form>
+          <p>
+            Notre mail :
+            <a class="couleur"href="Thelastofescape@escapegame.fr">Thelastofescape@escapegame.fr </a>
+          </p>
+          <img class="telephone" id="telephone" src="picture/telephone.png" alt="telephone">
+
+          <form method="post" action="traitement.php">
+          <p>
+            <label for="ecrire">
+            Qu'avez-vous pensé de l'aventure ?
+            </label>
+          </p>
+          <textarea name="ecrire" rows="10" cols="50" placeholder="Ecrivez nous sur ce que vous avez pensé de l'aventure"></textarea>
+          <input class="couleurBack" type="submit" value="Envoyer">
+        </form>
+      </div>
+        
        
       </div>
       

@@ -133,7 +133,7 @@
     background-color: #363636;
     color: white;
     padding : 20px;
-    text-align: center;
+    margin-left: 1200px;
   }
 
   .textetitre{
@@ -142,6 +142,9 @@
     }
   .titre {
     font-size: 75px;
+  }
+  .titreContact {
+    text-align: center;
   }
 
   
@@ -246,16 +249,16 @@
   }
   /* fin fonctionement hover pour chaque cas */
    /*Contact*/
-  #contact:not(.titre) {
-    text-align: left;
+
+  .contactDec {
+    padding-left: 300px;
     color: white;
-    margin: 0px 0px 0px 500px;
   }
+
   #contact .titre {
     font-size: 50px ;
     text-align: center;
     color: white;
-    margin: 0px 0px 0px 0px;
     padding: 20px;
 
   }
@@ -267,11 +270,31 @@
     padding: 20px;
   }
   #telephone {
-    float: right;
-    clear: both;
+    position: absolute;
+    right: 500px;
     max-width : 150px;
     height : auto;
-    margin: 0px 150px 0px 0px;
   }
-  
+
+  #calendar {
+    position: absolute;
+    left: 500px;
+    max-width : 200px;
+    height : auto;
+  }
+
+  #réserver {
+    background-color: #363636;
+    filter: drop-shadow(0 0 0.75rem #000000);
+    border-radius: 5% 5%;
+  }
+  .couleur {
+    color: #fddb3a;
+  }
+  .couleurhover:hover {
+    color: #fddb3a;
+  }
+  .couleurBack:hover{
+    background-color: #fddb3a;
+  }
   
