@@ -245,5 +245,33 @@
     opacity: 1;
   }
   /* fin fonctionement hover pour chaque cas */
+   /*Contact*/
+  #contact:not(.titre) {
+    text-align: left;
+    color: white;
+    margin: 0px 0px 0px 500px;
+  }
+  #contact .titre {
+    font-size: 50px ;
+    text-align: center;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+
+  }
+  #résérver .titre {
+    font-size: 50px ;
+    text-align: center;
+    color: white;
+    background-color: #363636;
+    padding: 20px;
+  }
+  #telephone {
+    float: right;
+    clear: both;
+    max-width : 150px;
+    height : auto;
+    margin: 0px 150px 0px 0px;
+  }
   
   
