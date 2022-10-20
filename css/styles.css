@@ -92,26 +92,38 @@
     text-align: center;
     width: 1200px;
     color: white;
+    visibility:hidden;
     opacity: 0;
+    
+  }
+  .content:hover {
+    border-radius: 10% 10%;
+    background-color: #363636;
+    visibility: visible;
+    opacity: 1;
   }
 
-  .partie1:hover .content {
+
+  .partie1 .chalet:hover ~ .content {
     border-radius: 10% 10%;
     background-color: #363636;
+    visibility:visible;
     opacity: 1;
     transition-delay: 0s;
     transition-duration: 0.6s;
   }
-  .partie2:hover .content {
+  .partie2 .cave:hover ~ .content {
     border-radius: 10% 10%;
     background-color: #363636;
+    visibility:visible;
     opacity: 1;
     transition-delay: 0s;
     transition-duration: 0.6s;
   }
-  .partie3:hover .content {
+  .partie3 .infecté:hover ~ .content {
     border-radius: 10% 10%;
     background-color: #363636;
+    visibility:visible;
     opacity: 1;
     transition-delay: 0s;
     transition-duration: 0.6s;
@@ -154,10 +166,25 @@
     display: inline-block;
     width: 150px;
     transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
   }
   
-  
+  .menuNav .sous-menu {
+    visibility:hidden;
+    text-indent : 17%;
+    opacity: 0;
+    transition: 1s;
+  }
+  .menuNav a:nth-child(2):hover ~ .sous-menu{
+    visibility:visible;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+  .sous-menu:hover {
+    visibility:visible;
+    opacity: 1;
+  }
+
+
   .menuNav a:hover {
     color: #fddb3a; /* couleur hover text */
   }
@@ -196,6 +223,24 @@
   
   .menuNav a:nth-child(4):hover ~ .under {
     transform: translateX(485px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .menuNav .sous-menu a:nth-child(1):hover ~ .under {
+    transform: translateX(15px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .menuNav .sous-menu a:nth-child(2):hover ~ .under {
+    transform: translateX(165px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .menuNav .sous-menu a:nth-child(3):hover ~ .under {
+    transform: translateX(330px);
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
