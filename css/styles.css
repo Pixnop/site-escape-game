@@ -34,6 +34,10 @@
     padding: 30px;
     text-align:center;;
   }
+  h2 {
+    padding: 30px;
+    text-align:center;;
+  }
 
   #chalet {
     filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
@@ -125,7 +129,7 @@
 
   .textetitre{
     position: absolute;
-    right: 450px;
+    right: 425px;
     }
   .titre {
     font-size: 75px;
