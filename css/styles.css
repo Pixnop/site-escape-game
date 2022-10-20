@@ -62,7 +62,7 @@
   #conteneur {
     margin: auto;
     width: 1200px;
-    columns: 3 auto;
+    columns: 3;
   }
   #conteneur p {
     text-align: center;
