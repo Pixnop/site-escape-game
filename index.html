@@ -89,12 +89,12 @@
 
         <form action="on-a-pas-encore-fait-de-php.php" method="post" class="formulaire">
           <p>
-            <label for="name">Nom:</label>
-            <input id="name" name="name" type="text">
-
-            <label for="surname"> Prénom:</label>
-            <input id="surname" name="surname" type="text">
+            <input id="name" name="name" type="text" placeholder="Nom">
+            </p>
+            <p>
+            <input id="surname" name="surname" type="text" placeholder="Prénom">
           </p>
+          <p>
           <p>
             Nombre Joueurs :
             <input type="radio" id="j3" name="nbJ" value="j3">
@@ -114,13 +114,36 @@
 
         </form>
       </div>
-      
+      <div id="contact">
+        <h1 class="titre">
+          Comment nous contacter ?
+        </h1>
+        <p>
+          Numéro de Téléphone : 0635381568
+        </p>
+        <p>
+          Notre mail :
+          <a href="Thelastofescape@escapegame.fr">Thelastofescape@escapegame.fr</a>
+        </p>
+        <form method="post" action="traitement.php">
+          <p>
+              <label for="ecrire">
+              Qu'avez-vous pensé de l'aventure ?
+              </label>
+              <br />
+              
+              <textarea name="ecrire" rows="10" cols="50" placeholder="Ecrivez nous sur ce que vous avez pensé de l'aventure">
+              </textarea>       
+          </p>
+       </form>
+
+      </div>
       
       
       
 
       <footer>
-        Site créé par Fievet Léon, et .... C'est tout en fait
+        Site créé par Fievet Léon, et un peu Maisonneuve Sam C'est tout en fait
       </footer>
 
     </main>
