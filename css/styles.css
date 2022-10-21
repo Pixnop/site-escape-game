@@ -183,6 +183,11 @@ h2 {
   opacity: 0;
   
 }
+.textetitre{
+  position: absolute;
+  right: 425px;
+  left: 425px;
+  }
 /* --------------------------------------------------Affichge texte au hover-------------------------------------------------- */
 .partie1 .chalet:hover ~ .content {
   border-radius: 10% 10%;
@@ -214,10 +219,7 @@ h2 {
   color: white;
 }
 
-.textetitre{
-  position: absolute;
-  right: 425px;
-  }
+
 .titre {
   font-size: 75px;
 }
@@ -273,6 +275,7 @@ h2 {
 .couleurhover:hover {
   color: #fddb3a;
 }
+
 .couleurBack:hover{
   background-color: #fddb3a;
 }
