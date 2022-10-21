@@ -1,112 +1,99 @@
+/* --------------------------------------------------Setup-------------------------------------------------- */
 html {
   scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
-  /* mise en place du menu*/
-  .menuNav {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* mise en place du texte de menu*/
-  .menuNav a {
-    color: #f6f4e6;
-    text-decoration: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    display: inline-block;
-    width: 150px;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .menuNav .sous-menu {
-    visibility:hidden;
-    text-indent : 17%;
-    opacity: 0;
-    transition: 1s;
-  }
-  .menuNav a:nth-child(2):hover ~ .sous-menu{
-    visibility:visible;
-    opacity: 1;
-    transition: all 0.2s ease-in-out;
-  }
-  .sous-menu:hover {
-    visibility:visible;
+/* --------------------------------------------------Menu-------------------------------------------------- */
+/* mise en place du menu*/
+.menuNav {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+/* mise en place du texte de menu*/
+.menuNav a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 150px;
+  transition: all 0.2s ease-in-out;
+}
+.menuNav .sous-menu {
+  visibility:hidden;
+  text-indent : 17%;
+  opacity: 0;
+  transition: 1s;
+}
+.menuNav a:nth-child(2):hover ~ .sous-menu{
+  visibility:visible;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+.sous-menu:hover {
+  visibility:visible;
     opacity: 1;
   }
-
-
-  .menuNav a:hover {
-    color: #fddb3a; /* couleur hover text */
-  }
-  
-  .menuNav .under {
-    width: 50px;/* taille limité a 50px*/
-    height: 50px;
-    /* mise en place de l'image de hover*/
-    background-image: url("../picture/logo.jpg");
-    background-size: 50px 40px;
-    background-repeat: no-repeat;
-    /*mis en place fonctionement hover*/
-    opacity: 0;
-    transform: translateX(15px);
-    transition: all 0.2s ease-in-out;
-  }
-  
-   /* debut fonctionement hover pour chaque cas */
-  .menuNav a:nth-child(1):hover ~ .under {
-    transform: translateX(15px);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .menuNav a:nth-child(2):hover ~ .under {
-    transform: translateX(165px);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .menuNav a:nth-child(3):hover ~ .under {
-    transform: translateX(330px);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .menuNav a:nth-child(4):hover ~ .under {
-    transform: translateX(485px);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-
-  .menuNav .sous-menu a:nth-child(1):hover ~ .under {
-    transform: translateX(15px);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .menuNav .sous-menu a:nth-child(2):hover ~ .under {
-    transform: translateX(165px);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .menuNav .sous-menu a:nth-child(3):hover ~ .under {
-    transform: translateX(330px);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  /* fin fonctionement hover pour chaque cas */
-
+.menuNav a:hover {
+  color: #fddb3a; /* couleur hover text */
+}
+.menuNav .under {
+  width: 50px;/* taille limité a 50px*/
+  height: 50px;
+  /* mise en place de l'image de hover*/
+  background-image: url("../picture/logo.jpg");
+  background-size: 50px 40px;
+  background-repeat: no-repeat;
+  /*mis en place fonctionement hover*/
+  opacity: 0;
+  transform: translateX(15px);
+  transition: all 0.2s ease-in-out;
+} 
+/* debut fonctionement hover pour chaque cas */
+.menuNav a:nth-child(1):hover ~ .under {
+  transform: translateX(15px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+} 
+.menuNav a:nth-child(2):hover ~ .under {
+  transform: translateX(165px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.menuNav a:nth-child(3):hover ~ .under {
+  transform: translateX(330px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+} 
+.menuNav a:nth-child(4):hover ~ .under {
+  transform: translateX(485px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.menuNav .sous-menu a:nth-child(1):hover ~ .under {
+  transform: translateX(15px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.menuNav .sous-menu a:nth-child(2):hover ~ .under {
+  transform: translateX(165px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+} 
+.menuNav .sous-menu a:nth-child(3):hover ~ .under {
+  transform: translateX(330px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}  
+/* fin fonctionement hover pour chaque cas */
+/* --------------------------------------------------Foction de base-------------------------------------------------- */
 body {
   background-color: #272727;
   background-image: url("../picture/font-main.png"); /* image de font menu */
@@ -132,7 +119,6 @@ footer {
   padding: 50px;
   bottom: 0;
 }
-
 h1 {
   padding: 30px;
   text-align:center;;
@@ -141,28 +127,32 @@ h2 {
   padding: 30px;
   text-align:center;;
 }
-
+/* --------------------------------------------------images texte-------------------------------------------------- */
 #chalet {
   filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
   position: relative;
   max-height: 200px;
   padding: 10px;
 }
-
 #cave {
   filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
   position: relative;
   max-height: 200px;
   padding: 10px;
 }
-
 #infecté {
   filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
   position: relative;
   max-height: 200px;
   padding: 10px;
 }
-
+.zoom{
+  transition: transform .2s;
+}
+.zoom:hover{
+  transform: scale(1.05);
+}
+/* --------------------------------------------------conteneur image texte-------------------------------------------------- */
 #conteneur {
   display: flex;
   justify-content: center;
@@ -171,12 +161,6 @@ h2 {
 }
 #conteneur p {
   text-align: center;
-}
-.zoom{
-  transition: transform .2s;
-}
-.zoom:hover{
-  transform: scale(1.05);
 }
 .top {
   position: fixed;
@@ -188,8 +172,6 @@ h2 {
 .top:hover {
   filter: drop-shadow(0 -2mm 2mm #fddb3a);
 }
-
-
 .content {
   position: absolute;
   left: 360px;
@@ -201,14 +183,7 @@ h2 {
   opacity: 0;
   
 }
-.content:hover {
-  border-radius: 10% 10%;
-  background-color: #363636;
-  visibility: visible;
-  opacity: 1;
-}
-
-
+/* --------------------------------------------------Affichge texte au hover-------------------------------------------------- */
 .partie1 .chalet:hover ~ .content {
   border-radius: 10% 10%;
   background-color: #363636;
@@ -233,7 +208,7 @@ h2 {
   transition-delay: 0s;
   transition-duration: 0.6s;
 }
-
+/* --------------------------------------------------Reserver-------------------------------------------------- */
 .formulaire{
   background-color: #363636;
   color: white;
@@ -247,67 +222,58 @@ h2 {
   font-size: 75px;
 }
 .titreContact {
-
   text-align: center;
 }
-
-   /*Contact*/
-
-  .contactDec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-  }
-  
-  #étapes .titre{
-    background: linear-gradient(to top, #fddb3a , white);
-    background-clip: text;
-    -webkit-text-fill-color: transparent ;
-  }
-
-  #contact .titre {
-    font-size: 50px ;
-    text-align: center;
-    color: white;
-    padding: 20px;
-
-  }
-  #résérver .titre {
-    font-size: 50px ;
-    text-align: center;
-    color: white;
-    background-color: #363636;
-    padding: 20px;
-  }
-  #telephone{
-    max-width: 350px;
-  }
-  
-
-  #réserver {
-    background-color: #363636;
-    filter: drop-shadow(0 0 0.75rem #000000);
-    border-radius: 5% 5%;
-  }
-  #colonne{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .white{
-    color: #f6f4e6;
-  }
-
-  .couleur {
-    color: #fddb3a;
-  }
-  .couleurhover:hover {
-    color: #fddb3a;
-  }
-  .couleurBack:hover{
-    background-color: #fddb3a;
-  }
+/* --------------------------------------------------Contact-------------------------------------------------- */
+.contactDec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+} 
+#étapes .titre{
+  background: linear-gradient(to top, #fddb3a , white);
+  background-clip: text;
+  -webkit-text-fill-color: transparent ;
+}
+#contact .titre {
+  font-size: 50px ;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+#résérver .titre {
+  font-size: 50px ;
+  text-align: center;
+  color: white;
+  background-color: #363636;
+  padding: 20px;
+}
+#telephone{
+  max-width: 350px;
+}
+#réserver {
+  background-color: #363636;
+  filter: drop-shadow(0 0 0.75rem #000000);
+  border-radius: 5% 5%;
+}
+#colonne{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.white{
+  color: #f6f4e6;
+}
+.couleur {
+  color: #fddb3a;
+}
+.couleurhover:hover {
+  color: #fddb3a;
+}
+.couleurBack:hover{
+  background-color: #fddb3a;
+}
   
