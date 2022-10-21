@@ -164,9 +164,10 @@ h2 {
 }
 
 #conteneur {
-  margin: auto;
-  width: 1200px;
-  columns: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 #conteneur p {
   text-align: center;
@@ -236,8 +237,6 @@ h2 {
 .formulaire{
   background-color: #363636;
   color: white;
-  padding : 20px;
-  margin-left: 1200px;
 }
 
 .textetitre{
@@ -248,23 +247,20 @@ h2 {
   font-size: 75px;
 }
 .titreContact {
+
   text-align: center;
 }
 
    /*Contact*/
 
   .contactDec {
-    padding-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     color: white;
   }
-  #étapes .titre:hover{
-    transition-duration: 1s;
-    background: #fddb3a;
-    -webkit-text-fill-color: transparent ;
-    background-clip: text;
-    -webkit-text-fill-color: transparent ;
-    
-  }
+  
   #étapes .titre{
     background: linear-gradient(to top, #fddb3a , white);
     background-clip: text;
@@ -285,24 +281,21 @@ h2 {
     background-color: #363636;
     padding: 20px;
   }
-  #telephone {
-    position: absolute;
-    right: 500px;
-    max-width : 150px;
-    height : auto;
+  #telephone{
+    max-width: 350px;
   }
-
-  #calendar {
-    position: absolute;
-    left: 500px;
-    max-width : 200px;
-    height : auto;
-  }
+  
 
   #réserver {
     background-color: #363636;
     filter: drop-shadow(0 0 0.75rem #000000);
     border-radius: 5% 5%;
+  }
+  #colonne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .couleur {
     color: #fddb3a;

@@ -89,16 +89,17 @@
         <h2 class="titre">
           Comment réserver ?
         </h2>
-        <img class="calendar" id="calendar" src="picture/calendar.png" alt="calendar">
+        <div id = "colonne">
+          <img class="calendar" id="calendar" src="picture/calendar.png" alt="calendar">
 
-        <form action="on-a-pas-encore-fait-de-php.php" method="post" class="formulaire">
+          <form action="on-a-pas-encore-fait-de-php.php" method="post" class="formulaire">
           <p>
             <input id="name" name="name" type="text" placeholder="Nom">
-            </p>
-            <p>
-            <input id="surname" name="surname" type="text" placeholder="Prénom">
           </p>
           <p>
+            <input id="surname" name="surname" type="text" placeholder="Prénom">
+          </p>
+            <p>
             Nombre Joueurs :
             <input type="radio" id="j3" name="nbJ" value="j3">
             <label for="j3">3</label>
@@ -109,28 +110,29 @@
           </p>
           <p>
             <label for="date">Date voulu:</label>
-          <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date">
           </p>
           <p>
             <input class="couleurBack" type="submit" value="Envoyer">
           </p>
 
-        </form>
+          </form>
+        </div>
+        
       </div>
       <div id="contact">
         <h2 class="titre">
           Comment nous contacter ?
-        </h2>
-        <div class="contactDec">
+        </h2> 
+        <div id="colonne">
+          <div id="contactDec">
+          <a class="couleur" href="Thelastofescape@escapegame.fr">Thelastofescape@escapegame.fr </a>
           <p>
             Numéro de Téléphone : 0635381568
           </p>
           <p>
             Notre mail :
-            <a class="couleur" href="Thelastofescape@escapegame.fr">Thelastofescape@escapegame.fr </a>
           </p>
-          <img class="telephone" id="telephone" src="picture/telephone.png" alt="telephone">
-
           <form method="post" action="traitement.php">
           <p>
             <label>
@@ -140,10 +142,11 @@
           <textarea name="ecrire" rows="10" cols="50" placeholder="Ecrivez nous sur ce que vous avez pensé de l'aventure"></textarea>
           <input class="couleurBack" type="submit" value="Envoyer">
         </form>
-      </div>
+        </div>
+        <img class="telephone" id="telephone" src="picture/phone-icon-jpg-3.jpg" alt="telephone">
+        </div>
         
-       
-      </div>
+       </div>
       
       
       
