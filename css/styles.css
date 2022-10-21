@@ -1,156 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #272727;
-    background-image: url("../picture/font-main.png"); /* image de font menu */
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-family: "Montserrat", sans-serif;
-    margin:0;
-  }
-  article {
-    margin-top: 60%;
-    margin-bottom: 10%;
-    padding: 20px;
-    
-    color: #f6f4e6;
-  }
-  p {
-    padding: 10px;
-  }
-  footer {
-    background-color: #363636;
-    color: #f6f4e6;
-    padding: 50px;
-    bottom: 0;
-  }
-
-  h1 {
-    padding: 30px;
-    text-align:center;;
-  }
-  h2 {
-    padding: 30px;
-    text-align:center;;
-  }
-
-  #chalet {
-    filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
-    position: relative;
-    max-height: 200px;
-    padding: 10px;
-  }
-
-  #cave {
-    filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
-    position: relative;
-    max-height: 200px;
-    padding: 10px;
-  }
-
-  #infecté {
-    filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
-    position: relative;
-    max-height: 200px;
-    padding: 10px;
-  }
-
-  #conteneur {
-    margin: auto;
-    width: 1200px;
-    columns: 3;
-  }
-  #conteneur p {
-    text-align: center;
-  }
-  .zoom{
-    transition: transform .2s;
-  }
-  .zoom:hover{
-    transform: scale(1.05);
-  }
-  .top {
-    position: fixed;
-    padding: 10px;
-    bottom: 0;
-    right: 0;
-    height: 75px;
-  }
-  .top:hover {
-    filter: drop-shadow(0 -2mm 2mm #fddb3a);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
-  .content {
-    position: absolute;
-    left: 360px;
-    padding: 10px;
-    text-align: center;
-    width: 1200px;
-    color: white;
-    visibility:hidden;
-    opacity: 0;
-    
-  }
-  .content:hover {
-    border-radius: 10% 10%;
-    background-color: #363636;
-    visibility: visible;
-    opacity: 1;
-  }
-
-
-  .partie1 .chalet:hover ~ .content {
-    border-radius: 10% 10%;
-    background-color: #363636;
-    visibility:visible;
-    opacity: 1;
-    transition-delay: 0s;
-    transition-duration: 0.6s;
-  }
-  .partie2 .cave:hover ~ .content {
-    border-radius: 10% 10%;
-    background-color: #363636;
-    visibility:visible;
-    opacity: 1;
-    transition-delay: 0s;
-    transition-duration: 0.6s;
-  }
-  .partie3 .infecté:hover ~ .content {
-    border-radius: 10% 10%;
-    background-color: #363636;
-    visibility:visible;
-    opacity: 1;
-    transition-delay: 0s;
-    transition-duration: 0.6s;
-  }
-  
-  .formulaire{
-    background-color: #363636;
-    color: white;
-    padding : 20px;
-    margin-left: 1200px;
-  }
-
-  .textetitre{
-    position: absolute;
-    right: 425px;
-    }
-  .titre {
-    font-size: 75px;
-  }
-  .titreContact {
-    text-align: center;
-  }
-
-  
-
-
-  
   /* mise en place du menu*/
   .menuNav {
     position: absolute;
@@ -248,6 +102,151 @@
     opacity: 1;
   }
   /* fin fonctionement hover pour chaque cas */
+
+body {
+  background-color: #272727;
+  background-image: url("../picture/font-main.png"); /* image de font menu */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  margin:0;
+}
+article {
+  margin-top: 60%;
+  margin-bottom: 10%;
+  padding: 20px;
+  
+  color: #f6f4e6;
+}
+p {
+  padding: 10px;
+}
+footer {
+  background-color: #363636;
+  color: #f6f4e6;
+  padding: 50px;
+  bottom: 0;
+}
+
+h1 {
+  padding: 30px;
+  text-align:center;;
+}
+h2 {
+  padding: 30px;
+  text-align:center;;
+}
+
+#chalet {
+  filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
+  position: relative;
+  max-height: 200px;
+  padding: 10px;
+}
+
+#cave {
+  filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
+  position: relative;
+  max-height: 200px;
+  padding: 10px;
+}
+
+#infecté {
+  filter: drop-shadow(0 -6mm 5mm rgb(0, 0, 0));
+  position: relative;
+  max-height: 200px;
+  padding: 10px;
+}
+
+#conteneur {
+  margin: auto;
+  width: 1200px;
+  columns: 3;
+}
+#conteneur p {
+  text-align: center;
+}
+.zoom{
+  transition: transform .2s;
+}
+.zoom:hover{
+  transform: scale(1.05);
+}
+.top {
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  height: 75px;
+}
+.top:hover {
+  filter: drop-shadow(0 -2mm 2mm #fddb3a);
+}
+
+
+.content {
+  position: absolute;
+  left: 360px;
+  padding: 10px;
+  text-align: center;
+  width: 1200px;
+  color: white;
+  visibility:hidden;
+  opacity: 0;
+  
+}
+.content:hover {
+  border-radius: 10% 10%;
+  background-color: #363636;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.partie1 .chalet:hover ~ .content {
+  border-radius: 10% 10%;
+  background-color: #363636;
+  visibility:visible;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+}
+.partie2 .cave:hover ~ .content {
+  border-radius: 10% 10%;
+  background-color: #363636;
+  visibility:visible;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+}
+.partie3 .infecté:hover ~ .content {
+  border-radius: 10% 10%;
+  background-color: #363636;
+  visibility:visible;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+}
+
+.formulaire{
+  background-color: #363636;
+  color: white;
+  padding : 20px;
+  margin-left: 1200px;
+}
+
+.textetitre{
+  position: absolute;
+  right: 425px;
+  }
+.titre {
+  font-size: 75px;
+}
+.titreContact {
+  text-align: center;
+}
+
    /*Contact*/
 
   .contactDec {
