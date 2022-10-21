@@ -297,6 +297,10 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
   }
+  .white{
+    color: #f6f4e6;
+  }
+
   .couleur {
     color: #fddb3a;
   }
